@@ -15,8 +15,7 @@ namespace Cainos.CustomizablePixelCharacter
         {
             controller.OnFootstep(evt);
         }
-
-
+        
         #region - ATTACK EVENTS
 
         //the animatorStateInfo.speed here is used to distinguish

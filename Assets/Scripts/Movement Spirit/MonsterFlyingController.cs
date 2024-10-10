@@ -75,6 +75,10 @@ namespace Cainos.PixelArtMonster_Dungeon
             pm.IsGrounded = isGrounded;
         }
 
+        public void SetMovement(Vector2 movement)
+        {
+            rb2d.velocity = movement;
+        }
         public void Move( Vector2 inputMove )
         {
             if (IsDead)

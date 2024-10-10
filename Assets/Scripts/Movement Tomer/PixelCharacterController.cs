@@ -219,6 +219,11 @@ namespace Cainos.CustomizablePixelCharacter
         }
 
         #endregion
+        
+        public void SetMovement(Vector2 movement)
+        {
+            rb2d.velocity = movement;
+        }
 
         #region - PRIVATE HELPER PROPERTIES
         //world position of the character's center
