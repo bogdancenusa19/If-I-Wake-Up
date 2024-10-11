@@ -25,11 +25,14 @@ public class SwitchControl : MonoBehaviour
     [Space] [Header("Camera")] 
     [SerializeField] private CinemachineVirtualCamera camera;
 
-    [Space] [Header("Tomer Scripts References")] 
+    [Space] [Header("Tomer References")] 
     [SerializeField] private PixelCharacter _pixelCharacter;
 
     [SerializeField] private PixelCharacterController _controller;
     [SerializeField] private PixelCharacterInputMouseAndKeyboard _inputMouseAndKeyboard;
+
+    [SerializeField] private Animator animator;
+    [SerializeField] private Rigidbody2D rigidbody;
 
     [Space] [Header("Spirit Scripts References")] 
     [SerializeField] private PixelMonster _pixelMonster;
@@ -66,6 +69,9 @@ public class SwitchControl : MonoBehaviour
             _pixelMonster.enabled = true;
             _controllerSpirit.enabled = true;
             _inputMouseAndKeyboardSpirit.enabled = true;
+
+            animator.enabled = false;
+            rigidbody.isKinematic = true;
             
             _pixelCharacter.enabled = false;
             _controller.enabled = false;
@@ -83,6 +89,9 @@ public class SwitchControl : MonoBehaviour
             realWorld.SetActive(true);
             underworld.SetActive(false);
             ResetMovement(_controllerSpirit);
+
+            animator.enabled = true;
+            rigidbody.isKinematic = false;
             
             _pixelCharacter.enabled = true;
             _controller.enabled = true;

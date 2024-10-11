@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TX Tileset Ground_108
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: -4971725082711922011, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
-  m_Color: {r: 0.7423895, g: 0.9245283, b: 0.7195621, a: 1}
+  m_Color: {r: 0.3962264, g: 0.20963868, b: 0, a: 1}
   m_Transform:
     e00: 1
     e01: 0

@@ -57,7 +57,7 @@ public class AIControl : MonoBehaviour
 
                 if (!isUnderControl)
                 {
-                    spirit.transform.position = Vector3.MoveTowards(spirit.transform.position, targetPosition, moveSpeed * Time.deltaTime);
+                    spirit.transform.position = Vector3.MoveTowards(spirit.transform.position, new Vector3(targetPosition.x, targetPosition.y, spirit.transform.position.z), moveSpeed * Time.deltaTime);
                 }
             }
             yield return null;
